@@ -3,55 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hand Pump Nepal</title>
+    <title>Hand Pump Nepal - Charity Association</title>
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-            text-align: center;
+            color: #333;
         }
         header {
-            background: linear-gradient(to right, #008000, #ff0000);
+            background: linear-gradient(to right, #008000, #FF0000);
             color: white;
-            padding: 20px 0;
-            font-size: 24px;
-            font-weight: bold;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
         }
         section {
             padding: 20px;
+            text-align: center;
             background: white;
             margin: 20px;
             border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        input, textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #008000;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #006400;
         }
         footer {
-            background-color: #222;
+            background: #333;
             color: white;
+            text-align: center;
             padding: 10px;
             position: relative;
             bottom: 0;
             width: 100%;
         }
-        a {
-            color: #008000;
-            text-decoration: none;
-            font-weight: bold;
-        }
     </style>
 </head>
 <body>
-    <header>Hand Pump Nepal</header>
-    <section>
-        <h1>Our Mission</h1>
-        <p>We provide clean water access to rural communities in Nepal by installing hand pumps in villages lacking basic water infrastructure.</p>
+    <header>
+        <h1>Hand Pump Nepal</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#projects">Our Projects</a></li>
+                <li><a href="#help">How to Help</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Our mission is to improve access to clean water in Nepal by installing hand pumps in remote villages.</p>
     </section>
-    <section>
+    
+    <section id="projects">
+        <h2>Our Projects</h2>
+        <p>Discover our actions and the villages benefiting from our installations.</p>
+    </section>
+    
+    <section id="help">
+        <h2>How to Help</h2>
+        <p>Donate, become a volunteer, or sponsor a project.</p>
+    </section>
+    
+    <section id="news">
+        <h2>News</h2>
+        <p>Follow our latest activities and events.</p>
+    </section>
+    
+    <section id="contact">
         <h2>Contact Us</h2>
-        <p><strong>Phone:</strong> +9779804229112</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+        <p><strong>Phone:</strong> +977 9804229112</p>
         <p><strong>Instagram:</strong> <a href="https://www.instagram.com/hand_pump_nepal/" target="_blank">@hand_pump_nepal</a></p>
     </section>
-    <footer>© 2025 Hand Pump Nepal. All Rights Reserved.</footer>
+    
+    <footer>
+        <p>&copy; 2025 Hand Pump Nepal. All rights reserved.</p>
+    </footer>
 </body>
 </html>
