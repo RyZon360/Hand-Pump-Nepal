@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hand Pump Nepal - Charity Association</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,59 +21,60 @@
         nav ul {
             list-style: none;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
         }
         nav ul li {
-            display: inline;
-            margin: 0 15px;
+            margin: 10px;
         }
         nav ul li a {
             color: white;
             text-decoration: none;
+            font-weight: bold;
         }
-        section {
+        .content {
             padding: 20px;
-            text-align: center;
-            background: white;
-            margin: 20px;
+        }
+        .description {
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
         }
-        form {
+        .gallery {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px auto;
+            max-width: 1200px;
         }
-        input, textarea {
-            width: 80%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            background: #008000;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background: #006400;
+        .gallery img {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.2);
         }
         footer {
             background: #333;
             color: white;
             text-align: center;
-            padding: 10px;
-            position: relative;
-            bottom: 0;
-            width: 100%;
+            padding: 20px;
+            margin-top: 30px;
         }
-        .gallery img {
-            width: 100%;
-            max-width: 300px;
-            margin: 10px;
+        .contact {
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 900px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
         }
     </style>
 </head>
@@ -83,80 +83,45 @@
         <h1>Hand Pump Nepal</h1>
         <nav>
             <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#projects">Our Projects</a></li>
-                <li><a href="#help">How to Help</a></li>
-                <li><a href="#news">News</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Our mission is to improve access to clean water in Nepal by installing hand pumps in remote villages.</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Our Projects</h2>
-        <p>Discover our actions and the villages benefiting from our installations.</p>
-    </section>
-    
-    <section id="help">
-        <h2>How to Help</h2>
-        <p>Donate, become a volunteer, or sponsor a project.</p>
-    </section>
-    
-    <section id="news">
-        <h2>News</h2>
-        <p>Follow our latest activities and events.</p>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Send</button>
-        </form>
-        <p><strong>Phone:</strong> +977 9804229112</p>
-        <p><strong>Instagram:</strong> <a href="https://www.instagram.com/hand_pump_nepal/" target="_blank">@hand_pump_nepal</a></p>
-    </section>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="description">
+    <div class="content">
+        <section class="description" id="about">
+            <h2>About Us</h2>
             <p>In these remote villages, clean water isn’t just a necessity—it’s life-changing. Each water pump installed transforms the daily reality for impoverished families, providing hope, dignity, and health to our brothers and sisters in need. Beyond water, your generosity can ensure that widows and vulnerable community members never worry again about their next meal. Every donation counts, every drop matters. Together, we can turn compassion into action.</p>
-        </div>
+        </section>
 
-     <div class="gallery">
-        <img src="https://github.com/RyZon360/Hand-Pump-Nepal/raw/main/WhatsApp%20Image%202025-03-25%20at%2019.19.42.jpeg" alt="Image 1">
-        <img src="https://github.com/RyZon360/Hand-Pump-Nepal/raw/main/WhatsApp%20Image%202025-03-25%20at%2019.19.41.jpeg" alt="Image 2">
-        <img src="https://github.com/RyZon360/Hand-Pump-Nepal/raw/main/WhatsApp%20Image%202025-03-25%20at%2019.19.40.jpeg" alt="Image 3">
-        <img src="https://github.com/RyZon360/Hand-Pump-Nepal/raw/main/WhatsApp%20Image%202025-03-25%20at%2019.19.39.jpeg" alt="Image 4">
-        <img src="https://github.com/RyZon360/Hand-Pump-Nepal/raw/main/WhatsApp%20Image%202025-03-25%20at%2019.19.38.jpeg" alt="Image 5">
-        <img src="https://github.com/RyZon360/Hand-Pump-Nepal/raw/main/WhatsApp%20Image%202025-03-25%20at%2019.19.38%20(1).jpeg" alt="Image 6">
-        <img src="https://github.com/RyZon360/Hand-Pump-Nepal/raw/main/WhatsApp%20Image%202025-03-25%20at%2019.19.42%20(1).jpeg" alt="Image 7">
-        <img src="https://github.com/RyZon360/Hand-Pump-Nepal/raw/main/WhatsApp%20Image%202025-03-25%20at%2019.19.42%20(2).jpeg" alt="Image 8">
-        <img src="https://github.com/RyZon360/Hand-Pump-Nepal/raw/main/WhatsApp%20Image%202025-03-25%20at%2019.19.41%20(1).jpeg" alt="Image 9">
-        <img src="https://github.com/RyZon360/Hand-Pump-Nepal/raw/main/WhatsApp%20Image%202025-03-25%20at%2019.19.42%20(2).jpeg" alt="Image 10">
-        <img src="https://github.com/RyZon360/Hand-Pump-Nepal/raw/main/WhatsApp%20Image%202025-03-25%20at%2019.19.41%20(1).jpeg" alt="Image 11">
-        <img src="https://github.com/RyZon360/Hand-Pump-Nepal/raw/main/WhatsApp%20Image%202025-03-25%20at%2019.19.42%20(2).jpeg" alt="Image 12">
-        <img src="https://github.com/RyZon360/Hand-Pump-Nepal/raw/main/WhatsApp%20Image%202025-03-25%20at%2019.23.24.jpeg" alt="Image 13">
-        <img src="https://github.com/RyZon360/Hand-Pump-Nepal/raw/main/WhatsApp%20Image%202025-03-25%20at%2019.23.25%20(1).jpeg" alt="Image 14">
-        <img src="https://github.com/RyZon360/Hand-Pump-Nepal/raw/main/WhatsApp%20Image%202025-03-25%20at%2019.23.25.jpeg" alt="Image 15">
-        <img src="https://github.com/RyZon360/Hand-Pump-Nepal/raw/main/WhatsApp%20Image%202025-03-25%20at%2019.23.24%20(1).jpeg" alt="Image 16">
-        <img src="https://github.com/RyZon360/Hand-Pump-Nepal/raw/main/WhatsApp%20Image%202025-03-25%20at%2019.23.26.jpeg" alt="Image 17">
-        <img src="https://github.com/RyZon360/Hand-Pump-Nepal/raw/main/WhatsApp%20Image%202025-03-25%20at%2019.23.26%20(2).jpeg" alt="Image 18">
+        <section class="gallery" id="projects">
+            <img src="WhatsApp Image 2025-03-25 at 19.23.26 (2).jpeg" alt="Image 3">
+            <img src="WhatsApp Image 2025-03-25 at 19.19.42 (2).jpeg" alt="Image 4">
+            <img src="WhatsApp Image 2025-03-25 at 19.19.42 (1).jpeg" alt="Image 5">
+            <img src="WhatsApp Image 2025-03-25 at 19.19.42.jpeg" alt="Image 6">
+            <img src="WhatsApp Image 2025-03-25 at 19.19.41 (1).jpeg" alt="Image 7">
+            <img src="WhatsApp Image 2025-03-25 at 19.19.41.jpeg" alt="Image 8">
+            <img src="WhatsApp Image 2025-03-25 at 19.19.40.jpeg" alt="Image 9">
+            <img src="WhatsApp Image 2025-03-25 at 19.19.39.jpeg" alt="Image 10">
+            <img src="WhatsApp Image 2025-03-25 at 19.19.38 (1).jpeg" alt="Image 11">
+            <img src="WhatsApp Image 2025-03-25 at 19.19.38.jpeg" alt="Image 12">
+            <img src="WhatsApp Image 2025-03-25 at 19.23.26 (1).jpeg" alt="Image 13">
+            <img src="WhatsApp Image 2025-03-25 at 19.23.26.jpeg" alt="Image 14">
+            <img src="WhatsApp Image 2025-03-25 at 19.23.25 (2).jpeg" alt="Image 15">
+            <img src="WhatsApp Image 2025-03-25 at 19.23.25 (1).jpeg" alt="Image 16">
+            <img src="WhatsApp Image 2025-03-25 at 19.23.25.jpeg" alt="Image 17">
+            <img src="WhatsApp Image 2025-03-25 at 19.23.24 (1).jpeg" alt="Image 18">
+            <img src="WhatsApp Image 2025-03-25 at 19.23.24.jpeg" alt="Image 19">
+        </section>
+
+        <section class="contact" id="contact">
+            <h2>Contact Us</h2>
+            <p><strong>Phone:</strong> +977 9804229112</p>
+            <p><strong>Instagram:</strong> <a href="https://www.instagram.com/hand_pump_nepal/" target="_blank">@hand_pump_nepal</a></p>
+        </section>
     </div>
-    </section>
 
     <footer>
         <p>&copy; 2025 Hand Pump Nepal. All rights reserved.</p>
