@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
     <style>
         body {
@@ -34,21 +35,28 @@
 </head>
 <body>
 
-    <header style="background: linear-gradient(to right, #008000, #FF0000); color: white; padding: 20px; text-align: center;">
-        <h1 style="margin-bottom: 10px;">Gallery</h1>
-        <nav>
-            <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 0;">
-                <li><a href="about.html" style="color: white; text-decoration: none;">About Us</a></li>
-                <li><a href="gallery.html" style="color: white; text-decoration: none;">Gallery</a></li>
-                <li><a href="projects.html" style="color: white; text-decoration: none;">Projects</a></li>
-                <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
-                <li><a href="donate.html" style="color: white; text-decoration: none;">Make a Donation</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header style="background: linear-gradient(to right, #008000, #FF0000); color: white; padding: 20px; text-align: center;">
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <a href="javascript:history.back()" style="color: white; font-size: 40px; font-weight: bold; text-decoration: none;">
+            <i class="fas fa-arrow-left"></i>
+        </a>
+        <h1 style="margin: 0;">Hand Pump Nepal</h1>
+        <a href="index.html" style="color: white; font-size: 40px; font-weight: bold; text-decoration: none;">
+            <i class="fas fa-house"></i>
+        </a>
+    </div>
+    <nav>
+        <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 0;">
+            <li><a href="about.html" style="color: white; text-decoration: none;">About Us</a></li>
+            <li><a href="gallery.html" style="color: white; text-decoration: none;">Gallery</a></li>
+            <li><a href="projects.html" style="color: white; text-decoration: none;">Projects</a></li>
+            <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
+            <li><a href="donate.html" style="color: white; text-decoration: none;">Make a Donation</a></li>
+        </ul>
+    </nav>
+</header>
 
     <div class="gallery" style="margin-top: 30px;">
-        <!-- ici les images restent inchangées, tu colles exactement ce que tu avais -->
         <a href="WhatsApp Image 2025-03-25 at 19.19.42.jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.19.42.jpeg" alt="img"></a>
         <a href="WhatsApp Image 2025-03-25 at 19.19.41.jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.19.41.jpeg" alt="img"></a>
         <a href="WhatsApp Image 2025-03-25 at 19.19.41 (1).jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.19.41 (1).jpeg" alt="img"></a>
