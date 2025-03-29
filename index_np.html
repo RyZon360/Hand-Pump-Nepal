@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8" />
+  <title>ह्यान्ड पम्प नेपाल</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #008000, #ff0000);
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav ul li {
+      margin: 10px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 20px;
+      text-align: center;
+      background: white;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    input,
+    textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #008000;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #006400;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div
+      style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      "
+    >
+      <a
+        href="javascript:history.back()"
+        style="
+          color: white;
+          font-size: 40px;
+          font-weight: bold;
+          text-decoration: none;
+        "
+        ><i class="fas fa-arrow-left"></i
+      ></a>
+      <h1 style="margin: 0">ह्यान्ड पम्प नेपाल</h1>
+      <a
+        href="index.html"
+        style="
+          color: white;
+          font-size: 40px;
+          font-weight: bold;
+          text-decoration: none;
+        "
+        ><i class="fas fa-house"></i
+      ></a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery_final_fixed.html">ग्यालरी</a></li>
+        <li><a href="projects.html">परियोजनाहरू</a></li>
+        <li><a href="contact.html">सम्पर्क गर्नुहोस्</a></li>
+        <li><a href="donate.html">दान गर्नुहोस्</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="intro">
+    <h2>परिचय</h2>
+    <p>
+      यी टाढाका गाउँहरूमा, सफा पानी मात्र आवश्यकता होइन—यो जीवन परिवर्तन
+      गर्ने कुरा हो। स्थापना गरिएका प्रत्येक ह्यान्ड पम्पले गरिब परिवारहरूको
+      दैनिक जीवनलाई परिवर्तन गर्छ, आवश्यक परेको दाजुभाइ तथा दिदीबहिनीहरूलाई
+      आशा, गरिमा र स्वास्थ्य प्रदान गर्दछ। पानी बाहेक पनि, तपाईंको उदारताले
+      विधवा र कमजोर समुदायका सदस्यहरूलाई मासिक खाध्य सुरक्षामा सहयोग पुर्याउन
+      सक्छ। प्रत्येक दान महत्त्वपूर्ण हुन्छ, प्रत्येक थोपा प्रभाव पार्दछ। हामी
+      सबै मिलेर दयालुता कर्ममा बदल्न सक्छौं।
+    </p>
+  </section>
+
+  <section id="gallery">
+    <h2>ग्यालरी</h2>
+    <div class="gallery">
+      <img src="images/image1.jpg" alt="Image 1" />
+      <img src="images/image2.jpg" alt="Image 2" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>हामीलाई सम्पर्क गर्नुहोस्</h2>
+    <form>
+      <label for="name">नाम:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">इमेल:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="message">सन्देश:</label>
+      <textarea id="message" name="message" required></textarea>
+
+      <button type="submit">पठाउनुहोस्</button>
+    </form>
+    <p><strong>फोन:</strong> +977 9804229112</p>
+    <p>
+      <strong>इन्स्टाग्राम:</strong>
+      <a
+        href="https://www.instagram.com/hand_pump_nepal/"
+        target="_blank"
+        >@hand_pump_nepal</a
+      >
+    </p>
+  </section>
+
+  <footer>
+    <p>© २०२५ ह्यान्ड पम्प नेपाल। सबै अधिकार सुरक्षित छन्।</p>
+  </footer>
+</body>
+</html>
