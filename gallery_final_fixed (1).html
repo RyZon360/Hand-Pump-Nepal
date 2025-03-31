@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+<header style="background: linear-gradient(to right, #008000, #FF0000); color: white; padding: 20px; text-align: center;">
+  <div style="display: flex; justify-content: space-between; align-items: center;">
+    <a href="javascript:history.back()" style="color: white; font-size: 40px; font-weight: bold; text-decoration: none;">
+      <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <div style="text-align: center;">
+      <img src="logo.png" alt="Hand Pump Nepal Logo" style="height: 60px; margin-bottom: 10px;" />
+      <h1 style="margin: 0;">Gallery</h1>
+      <div style="margin-top: 10px;">
+        <span style="margin-right: 10px;">🌐</span>
+        <a href="index.html" style="color: white; text-decoration: none; margin-right: 15px; font-weight: bold;">EN</a>
+        |
+        <a href="index_np.html" style="color: white; text-decoration: none; margin-left: 15px; font-weight: bold;">NP</a>
+      </div>
+    </div>
+
+    <a href="index.html" style="color: white; font-size: 40px; font-weight: bold; text-decoration: none;">
+      <i class="fas fa-house"></i>
+    </a>
+  </div>
+
+  <nav>
+    <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0 0 0;">
+      <li><a href="about.html" style="color: white; text-decoration: none; font-weight: bold;">About Us</a></li>
+      <li><a href="gallery_final_fixed.html" style="color: white; text-decoration: none; font-weight: bold;">Gallery</a></li>
+      <li><a href="projects.html" style="color: white; text-decoration: none; font-weight: bold;">Projects</a></li>
+      <li><a href="contact.html" style="color: white; text-decoration: none; font-weight: bold;">Contact</a></li>
+      <li><a href="donate.html" style="color: white; text-decoration: none; font-weight: bold;">Make a Donation</a></li>
+    </ul>
+  </nav>
+</header>
+
+    <div class="gallery" style="margin-top: 30px;">
+        <a href="WhatsApp Image 2025-03-25 at 19.19.42.jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.19.42.jpeg" alt="img"></a>
+        <a href="WhatsApp Image 2025-03-25 at 19.19.41.jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.19.41.jpeg" alt="img"></a>
+        <a href="WhatsApp Image 2025-03-25 at 19.19.41 (1).jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.19.41 (1).jpeg" alt="img"></a>
+        <a href="WhatsApp Image 2025-03-25 at 19.19.40.jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.19.40.jpeg" alt="img"></a>
+        <a href="WhatsApp Image 2025-03-25 at 19.19.39.jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.19.39.jpeg" alt="img"></a>
+        <a href="WhatsApp Image 2025-03-25 at 19.19.38.jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.19.38.jpeg" alt="img"></a>
+        <a href="WhatsApp Image 2025-03-25 at 19.19.38 (1).jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.19.38 (1).jpeg" alt="img"></a>
+        <a href="WhatsApp Image 2025-03-25 at 19.19.42 (1).jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.19.42 (1).jpeg" alt="img"></a>
+        <a href="WhatsApp Image 2025-03-25 at 19.19.42 (2).jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.19.42 (2).jpeg" alt="img"></a>
+        <a href="WhatsApp Image 2025-03-25 at 19.23.24.jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.23.24.jpeg" alt="img"></a>
+        <a href="WhatsApp Image 2025-03-25 at 19.23.24 (1).jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.23.24 (1).jpeg" alt="img"></a>
+        <a href="WhatsApp Image 2025-03-25 at 19.23.25.jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.23.25.jpeg" alt="img"></a>
+        <a href="WhatsApp Image 2025-03-25 at 19.23.25 (1).jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.23.25 (1).jpeg" alt="img"></a>
+        <a href="WhatsApp Image 2025-03-25 at 19.23.25 (2).jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.23.25 (2).jpeg" alt="img"></a>
+        <a href="WhatsApp Image 2025-03-25 at 19.23.26.jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.23.26.jpeg" alt="img"></a>
+        <a href="WhatsApp Image 2025-03-25 at 19.23.26 (2).jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.23.26 (2).jpeg" alt="img"></a>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+</body>
+</html>
