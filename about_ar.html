@@ -12,6 +12,9 @@
       padding: 0;
       direction: rtl;
     }
+    header * {
+      direction: ltr !important;
+    }
     .dark-mode {
       background-color: #121212;
       color: #f0f0f0;
@@ -108,7 +111,6 @@
   </div>
 </section>
 
-<!-- Script dark mode -->
 <script>
   function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
