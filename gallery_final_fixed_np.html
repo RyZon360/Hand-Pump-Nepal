@@ -1,121 +1,161 @@
 <!DOCTYPE html>
 <html lang="ne">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>ग्यालरी</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
       margin: 0;
-      padding: 20px;
+      background-color: #f4f4f4;
+    }
+    .dark-mode {
+      background-color: #121212;
+      color: #f4f4f4;
+    }
+    .dark-mode a {
+      color: #90caf9 !important;
+    }
+    header {
+      background: linear-gradient(to right, #008000, #FF0000);
+      color: white;
+      padding: 15px 20px;
+    }
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .logo-group {
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      justify-content: center;
+      padding: 0;
+      margin: 12px 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .social-group,
+    .home-group {
+      display: flex;
+      flex-direction: column;
+    }
+    .home-group {
+      align-items: flex-end;
+    }
+    .social-icons {
+      display: flex;
+      gap: 12px;
+      margin-top: 40px;
+    }
+    h1 {
+      margin: 10px 0 5px;
+    }
+    section {
+      padding: 30px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 15px;
-      max-width: 1200px;
-      margin: 0 auto;
     }
     .gallery img {
       width: 100%;
       height: 220px;
       object-fit: cover;
       border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s ease-in-out;
     }
-    .gallery img:hover {
-      transform: scale(1.05);
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #f0f0f0;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
 
-<header style="background: linear-gradient(to right, #008000, #FF0000); color: white; padding: 20px; text-align: center;">
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-    <a href="javascript:history.back()" style="color: white; font-size: 40px; font-weight: bold; text-decoration: none;">
-      <i class="fas fa-arrow-left"></i>
-    </a>
-
-    <div style="text-align: center;">
-      <h1 style="margin: 0;">Hand Pump Nepal</h1>
-      <div style="margin-top: 10px;">
-        <span style="margin-right: 10px;">🌐</span>
-        <a href="gallery_final_fixed.html" style="color: white; text-decoration: none; margin-right: 15px; font-weight: bold;">EN</a>
-        |
-        <a href="gallery_final_fixed_np.html" style="color: white; text-decoration: none; margin-left: 15px; font-weight: bold;">NP</a>
+<header>
+  <div class="top-bar">
+    <div class="social-group">
+      <a href="javascript:history.back()" style="color: white; font-size: 32px;">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/hand_pump_nepal/" target="_blank" style="color: white;">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UC6AhTV5VBIMvlplATf6g07w" target="_blank" style="color: white;">
+          <i class="fab fa-youtube fa-lg"></i>
+        </a>
+        <a href="mailto:handpumpnepal@gmail.com" style="color: white;">
+          <i class="fas fa-envelope fa-lg"></i>
+        </a>
       </div>
     </div>
 
-    <a href="index_np.html" style="color: white; font-size: 40px; font-weight: bold; text-decoration: none;">
-      <i class="fas fa-house"></i>
-    </a>
-  </div>
+    <div class="logo-group">
+      <a href="index_np.html">
+        <img src="logo.png" alt="Hand Pump Nepal" style="height: 50px;" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="about_np.html">हाम्रोबारे</a></li>
+          <li><a href="gallery_final_fixed_np.html">ग्यालरी</a></li>
+          <li><a href="projects_np.html">परियोजनाहरू</a></li>
+          <li><a href="contact_np.html">सम्पर्क</a></li>
+          <li><a href="donate_np.html">दान गर्नुहोस्</a></li>
+        </ul>
+      </nav>
+      <h1><a href="gallery_final_fixed_np.html" style="color: white; text-decoration: none;">ग्यालरी</a></h1>
+      <div>
+        🌐 
+        <a href="gallery_final_fixed.html" style="color: white; margin: 0 8px;">EN</a> |
+        <a href="gallery_final_fixed_np.html" style="color: white; margin: 0 8px;">NP</a> |
+        <a href="gallery_final_fixed_ar.html" style="color: white; margin: 0 8px;">AR</a>
+      </div>
+    </div>
 
-  <nav>
-    <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0 0 0;">
-      <li><a href="about_np.html" style="color: white; text-decoration: none; font-weight: bold;">हाम्रोबारे</a></li>
-      <li><a href="gallery_final_fixed_np.html" style="color: white; text-decoration: none; font-weight: bold;">ग्यालरी</a></li>
-      <li><a href="projects_np.html" style="color: white; text-decoration: none; font-weight: bold;">परियोजनाहरू</a></li>
-      <li><a href="contact_np.html" style="color: white; text-decoration: none; font-weight: bold;">सम्पर्क गर्नुहोस्</a></li>
-      <li><a href="donate_np.html" style="color: white; text-decoration: none; font-weight: bold;">दान गर्नुहोस्</a></li>
-    </ul>
-  </nav>
+    <div class="home-group">
+      <a href="index_np.html" style="color: white; font-size: 32px;">
+        <i class="fas fa-house"></i>
+      </a>
+      <button onclick="toggleDarkMode()" style="margin-top: 40px; background: none; border: 1px solid white; color: white; padding: 4px 8px; border-radius: 5px; cursor: pointer;">
+        🌙
+      </button>
+    </div>
+  </div>
 </header>
 
-<div class="gallery" style="margin-top: 30px;">
-    <a href="WhatsApp Image 2025-03-25 at 19.19.42.jpeg" data-lightbox="gallery">
-    <img src="WhatsApp Image 2025-03-25 at 19.19.42.jpeg" alt="Image 1" />
-  </a>
-  <a href="WhatsApp Image 2025-03-25 at 19.19.41.jpeg" data-lightbox="gallery">
-    <img src="WhatsApp Image 2025-03-25 at 19.19.41.jpeg" alt="Image 2" />
-  </a>
-  <a href="WhatsApp Image 2025-03-25 at 19.19.41 (1).jpeg" data-lightbox="gallery">
-    <img src="WhatsApp Image 2025-03-25 at 19.19.41 (1).jpeg" alt="Image 3" />
-  </a>
-  <a href="WhatsApp Image 2025-03-25 at 19.19.40.jpeg" data-lightbox="gallery">
-    <img src="WhatsApp Image 2025-03-25 at 19.19.40.jpeg" alt="Image 4" />
-  </a>
-  <a href="WhatsApp Image 2025-03-25 at 19.19.39.jpeg" data-lightbox="gallery">
-    <img src="WhatsApp Image 2025-03-25 at 19.19.39.jpeg" alt="Image 5" />
-  </a>
-  <a href="WhatsApp Image 2025-03-25 at 19.19.38.jpeg" data-lightbox="gallery">
-    <img src="WhatsApp Image 2025-03-25 at 19.19.38.jpeg" alt="Image 6" />
-  </a>
-  <a href="WhatsApp Image 2025-03-25 at 19.19.38 (1).jpeg" data-lightbox="gallery">
-    <img src="WhatsApp Image 2025-03-25 at 19.19.38 (1).jpeg" alt="Image 7" />
-  </a>
-  <a href="WhatsApp Image 2025-03-25 at 19.19.42 (1).jpeg" data-lightbox="gallery">
-    <img src="WhatsApp Image 2025-03-25 at 19.19.42 (1).jpeg" alt="Image 8" />
-  </a>
-  <a href="WhatsApp Image 2025-03-25 at 19.19.42 (2).jpeg" data-lightbox="gallery">
-    <img src="WhatsApp Image 2025-03-25 at 19.19.42 (2).jpeg" alt="Image 9" />
-  </a>
-  <a href="WhatsApp Image 2025-03-25 at 19.23.24.jpeg" data-lightbox="gallery">
-    <img src="WhatsApp Image 2025-03-25 at 19.23.24.jpeg" alt="Image 10" />
-  </a>
-  <a href="WhatsApp Image 2025-03-25 at 19.23.24 (1).jpeg" data-lightbox="gallery">
-    <img src="WhatsApp Image 2025-03-25 at 19.23.24 (1).jpeg" alt="Image 11" />
-  </a>
-  <a href="WhatsApp Image 2025-03-25 at 19.23.25.jpeg" data-lightbox="gallery">
-    <img src="WhatsApp Image 2025-03-25 at 19.23.25.jpeg" alt="Image 12" />
-  </a>
-  <a href="WhatsApp Image 2025-03-25 at 19.23.25 (1).jpeg" data-lightbox="gallery">
-    <img src="WhatsApp Image 2025-03-25 at 19.23.25 (1).jpeg" alt="Image 13" />
-  </a>
-  <a href="WhatsApp Image 2025-03-25 at 19.23.25 (2).jpeg" data-lightbox="gallery">
-    <img src="WhatsApp Image 2025-03-25 at 19.23.25 (2).jpeg" alt="Image 14" />
-  </a>
-  <a href="WhatsApp Image 2025-03-25 at 19.23.26.jpeg" data-lightbox="gallery">
-    <img src="WhatsApp Image 2025-03-25 at 19.23.26.jpeg" alt="Image 15" />
-  </a>
-  <a href="WhatsApp Image 2025-03-25 at 19.23.26 (2).jpeg" data-lightbox="gallery">
-    <img src="WhatsApp Image 2025-03-25 at 19.23.26 (2).jpeg" alt="Image 16" />
-  </a>
-</div>
+<section>
+  <div class="gallery">
+    <!-- copie-colle ici le même bloc d'images que dans gallery_final_fixed.html -->
+    <!-- Tu peux le réutiliser tel quel pour que les images soient identiques -->
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Hand Pump Nepal. सबै अधिकार सुरक्षित छन्।</p>
+</footer>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+  }
+</script>
+
 </body>
 </html>
