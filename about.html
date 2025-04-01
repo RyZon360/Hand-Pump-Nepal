@@ -48,11 +48,11 @@
 </head>
 <body>
 
-<header style="background: linear-gradient(to right, #008000, #FF0000); color: white; padding: 20px 10px;">
-  <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
-    
-    <!-- Flèche + Réseaux sociaux à gauche -->
-    <div class="icon-group" style="align-items: flex-start;">
+<header style="background: linear-gradient(to right, #008000, #FF0000); color: white; padding: 20px;">
+  <div style="display: flex; align-items: center; justify-content: space-between;">
+
+    <!-- Colonne gauche : flèche + réseaux -->
+    <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 8px;">
       <a href="javascript:history.back()" style="color: white; font-size: 32px; text-decoration: none;">
         <i class="fas fa-arrow-left"></i>
       </a>
@@ -67,9 +67,11 @@
       </a>
     </div>
 
-    <!-- Centre : Logo, titre, langues -->
-    <div style="text-align: center; width: 100%;">
-      <a href="index.html"><img src="logo.png" alt="Hand Pump Nepal" style="height: 50px;"></a>
+    <!-- Centre : logo, titre, langues -->
+    <div style="text-align: center;">
+      <a href="index.html">
+        <img src="logo.png" alt="Hand Pump Nepal" style="height: 50px;">
+      </a>
       <h1 style="margin: 5px 0;">
         <a href="about.html" style="color: white; text-decoration: none;">About Us</a>
       </h1>
@@ -81,8 +83,8 @@
       </div>
     </div>
 
-    <!-- Maison + Dark mode à droite -->
-    <div class="icon-group" style="align-items: flex-end;">
+    <!-- Colonne droite : maison + dark mode -->
+    <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 8px;">
       <a href="index.html" style="color: white; font-size: 32px; text-decoration: none;">
         <i class="fas fa-house"></i>
       </a>
@@ -90,9 +92,9 @@
         🌙
       </button>
     </div>
+
   </div>
 </header>
-
 <section>
   <div class="about-box">
     <h2>About Hand Pump Nepal</h2>
