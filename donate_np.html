@@ -2,175 +2,230 @@
 <html lang="ne">
 <head>
   <meta charset="UTF-8" />
-  <title>ह्यान्ड पम्प नेपाल - दान गर्नुहोस्</title>
+  <title>दान गर्नुहोस्</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
+      background-color: #f8f9fa;
       margin: 0;
       padding: 0;
-      color: #333;
     }
+
+    .dark-mode {
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    .dark-mode a {
+      color: #90caf9 !important;
+    }
+
     header {
       background: linear-gradient(to right, #008000, #FF0000);
       color: white;
       padding: 20px;
-      text-align: center;
     }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
     nav ul {
       list-style: none;
-      padding: 0;
       display: flex;
+      gap: 20px;
       justify-content: center;
-      flex-wrap: wrap;
+      padding: 0;
+      margin: 10px 0;
     }
-    nav ul li {
-      margin: 10px;
-    }
+
     nav ul li a {
       color: white;
       text-decoration: none;
       font-weight: bold;
     }
+
+    .logo-group {
+      text-align: center;
+    }
+
+    .home-group,
+    .social-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .social-group {
+      margin-left: 20px;
+    }
+
+    .home-group {
+      margin-right: 20px;
+      align-items: flex-end;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 12px;
+      margin-top: 45px;
+    }
+
     section {
       padding: 30px 20px;
-      max-width: 900px;
+      text-align: center;
+      max-width: 800px;
       margin: 0 auto;
-      background: white;
-      margin-top: 30px;
+    }
+
+    .donation-box {
+      background-color: white;
+      padding: 25px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
     }
-    .services {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      margin-bottom: 20px;
+
+    .dark-mode .donation-box {
+      background-color: #1e1e1e;
+      color: #f0f0f0;
     }
-    .services a {
+
+    a.button {
       display: inline-block;
-      padding: 15px;
-      background: #008000;
+      margin: 10px 10px;
+      padding: 10px 20px;
+      background-color: #008000;
       color: white;
+      border-radius: 5px;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 5px;
-      text-align: center;
-      transition: background 0.3s;
     }
-    .services a:hover {
-      background: #006400;
-    }
-    form {
-      display: flex;
-      flex-direction: column;
-    }
-    input, textarea {
+
+    input[type="email"], input[type="text"] {
       padding: 10px;
-      margin: 10px 0;
+      width: 80%;
+      margin: 10px auto;
+      display: block;
       border: 1px solid #ccc;
       border-radius: 5px;
     }
-    button {
-      background: #008000;
+
+    button[type="submit"] {
+      background-color: #008000;
       color: white;
-      padding: 10px;
+      padding: 10px 20px;
       border: none;
       border-radius: 5px;
       cursor: pointer;
-    }
-    button:hover {
-      background: #006400;
-    }
-    .alert {
-      color: red;
       font-weight: bold;
-      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
- <header style="background: linear-gradient(to right, #008000, #FF0000); color: white; padding: 20px; text-align: center;">
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-    <a href="javascript:history.back()" style="color: white; font-size: 40px; font-weight: bold; text-decoration: none;">
-      <i class="fas fa-arrow-left"></i>
-    </a>
 
-    <div style="text-align: center;">
-      <img src="logo.png" alt="Hand Pump Nepal Logo" style="height: 60px; margin-bottom: 10px;" />
-      <h1 style="margin: 0;">दान गर्नुहोस्</h1>
-      <div style="margin-top: 10px;">
-        <span style="margin-right: 10px;">🌐</span>
-        <a href="index.html" style="color: white; text-decoration: none; margin-right: 15px; font-weight: bold;">EN</a>
-        |
-        <a href="index_np.html" style="color: white; text-decoration: none; margin-left: 15px; font-weight: bold;">NP</a>
+<header>
+  <div class="top-bar">
+
+    <!-- Flèche + Social -->
+    <div class="social-group">
+      <a href="javascript:history.back()" style="color: white; font-size: 32px;">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/hand_pump_nepal/" target="_blank" style="color: white;">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UC6AhTV5VBIMvlplATf6g07w" target="_blank" style="color: white;">
+          <i class="fab fa-youtube fa-lg"></i>
+        </a>
+        <a href="mailto:handpumpnepal@gmail.com" style="color: white;">
+          <i class="fas fa-envelope fa-lg"></i>
+        </a>
       </div>
     </div>
 
-    <a href="index_np.html" style="color: white; font-size: 40px; font-weight: bold; text-decoration: none;">
-      <i class="fas fa-house"></i>
-    </a>
-  </div>
-
-  <nav>
-  <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0 0 0;">
-    <li><a href="about_np.html" style="color: white; text-decoration: none; font-weight: bold;">हाम्रोबारे</a></li>
-    <li><a href="gallery_final_fixed_np.html" style="color: white; text-decoration: none; font-weight: bold;">ग्यालरी</a></li>
-    <li><a href="projects_np.html" style="color: white; text-decoration: none; font-weight: bold;">परियोजनाहरू</a></li>
-    <li><a href="contact_np.html" style="color: white; text-decoration: none; font-weight: bold;">सम्पर्क गर्नुहोस्</a></li>
-    <li><a href="donate_np.html" style="color: white; text-decoration: none; font-weight: bold;">दान गर्नुहोस्</a></li>
-  </ul>
-</nav>
-</header>
-
-  <section>
-    <h2>कसरी दान गर्ने?</h2>
-    <p>तपाईं निम्न सेवाहरू प्रयोग गरेर हाम्रो परियोजनामा दान गर्न सक्नुहुन्छ:</p>
-
-    <div class="services">
-      <a href="https://www.westernunion.com/np/en/home.html" target="_blank">Western Union</a>
-      <a href="https://www.riamoneytransfer.com/en-np" target="_blank">Ria Money Transfer</a>
+    <!-- Logo + Nav -->
+    <div class="logo-group">
+      <a href="index_np.html">
+        <img src="logo.png" alt="Hand Pump Nepal" style="height: 50px;" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="about_np.html">हाम्रो बारेमा</a></li>
+          <li><a href="gallery_final_fixed_np.html">ग्यालेरी</a></li>
+          <li><a href="projects_np.html">परियोजनाहरू</a></li>
+          <li><a href="contact_np.html">सम्पर्क</a></li>
+          <li><a href="donate_np.html">दान गर्नुहोस्</a></li>
+        </ul>
+      </nav>
+      <h1 style="margin: 5px 0;"><a href="donate_np.html" style="color: white; text-decoration: none;">दान गर्नुहोस्</a></h1>
+      <div>
+        🌐
+        <a href="donate.html" style="color: white; margin: 0 8px;">EN</a>|
+        <a href="donate_np.html" style="color: white; margin: 0 8px;">NP</a>|
+        <a href="donate_ar.html" style="color: white; margin: 0 8px;">AR</a>
+      </div>
     </div>
 
-    <h3>प्राप्तकर्ता विवरण</h3>
-    <ul>
-      <li><strong>प्राप्तकर्ता नाम:</strong> [Full Name of Contact]</li>
-      <li><strong>शहर:</strong> [City]</li>
-      <li><strong>देश:</strong> नेपाल</li>
-      <li><strong>फोन:</strong> +9779804229112</li>
-    </ul>
+    <!-- Maison + dark -->
+    <div class="home-group">
+      <a href="index_np.html" style="color: white; font-size: 32px;">
+        <i class="fas fa-house"></i>
+      </a>
+      <button onclick="toggleDarkMode()" style="margin-top: 45px; background: none; border: 1px solid white; color: white; padding: 4px 8px; border-radius: 5px; cursor: pointer;">
+        🌙
+      </button>
+    </div>
+  </div>
+</header>
 
-    <p>💡 तपाईं चयन गरिएको सेवाको आधिकारिक वेबसाइटमा पुनःनिर्देशित हुनुहुनेछ। कृपया माथिको विवरण प्रयोग गर्नुहोस्।</p>
+<section>
+  <div class="donation-box">
+    <h2>नेपालमा दान पठाउनुहोस्</h2>
+    <p>तपाईं तलको सेवाहरू प्रयोग गरेर रकम पठाउन सक्नुहुन्छ:</p>
+    <a href="https://www.westernunion.com/" target="_blank" class="button">Western Union</a>
+    <a href="https://www.riamoneytransfer.com/" target="_blank" class="button">Ria Money Transfer</a>
 
-    <p class="alert">🔑 Western Union (MTCN) वा Ria को सन्दर्भ नम्बर अनिवार्य छ! <br> कृपया ट्रान्सफरपछि तपाईंले प्राप्त गर्ने यो नम्बर सन्देशमा समावेश गर्नुहोस्।</p>
+    <p><strong>प्राप्तकर्ता नाम:</strong> [Full Name]</p>
+    <p><strong>सहर:</strong> [City]</p>
+    <p><strong>देश:</strong> नेपाल</p>
+    <p><strong>फोन:</strong> +9779804229112</p>
 
-    <h3>तपाईंको दान पुष्टि गर्नुहोस्</h3>
+    <p style="margin-top: 20px;">
+      💡 तपाईंलाई सम्बन्धित वेबसाइटमा पुनःनिर्देशित गरिनेछ। स्थानान्तरण गर्दा माथिका विवरणहरू प्रयोग गर्नुहोस्।
+    </p>
+
+    <p style="color: red; font-weight: bold;">
+      🔑 यो नम्बर आवश्यक छ तपाईंको दान प्राप्त गर्न। तपाईं Western Union वा Ria बाट स्थानान्तरण पश्चात प्राप्त गर्नुहुनेछ।
+    </p>
+
+    <h3 style="margin-top: 30px;">तपाईंको दान पुष्टि गर्नुहोस्</h3>
     <form>
-      <label for="email">तपाईंको इमेल:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="name">तपाईंको नाम:</label>
-      <input type="text" id="name" name="name">
-
-      <label for="amount">रकम (अनुमानित):</label>
-      <input type="text" id="amount" name="amount">
-
-      <label for="date">स्थानान्तरण मिति:</label>
-      <input type="date" id="date" name="date">
-
-      <label for="method">प्रयोग गरिएको सेवा:</label>
-      <input type="text" id="method" name="method">
-
-      <label for="ref" style="color: red; font-weight: bold;">MTCN / सन्दर्भ नम्बर:</label>
-      <input type="text" id="ref" name="ref" required>
-
-      <label for="message">थप सन्देश (वैकल्पिक):</label>
-      <textarea id="message" name="message"></textarea>
-
-      <button type="submit">पुष्टि पठाउनुहोस्</button>
+      <input type="email" placeholder="तपाईंको ईमेल" required />
+      <input type="text" placeholder="MTCN / सन्दर्भ नम्बर" required />
+      <button type="submit">पठाउनुहोस्</button>
     </form>
-  </section>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 Hand Pump Nepal. सबै अधिकार सुरक्षित।</p>
+</footer>
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+  }
+</script>
+
 </body>
 </html>
