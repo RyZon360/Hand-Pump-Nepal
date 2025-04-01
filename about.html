@@ -11,10 +11,6 @@
       margin: 0;
       padding: 0;
     }
-    section {
-      padding: 20px;
-      text-align: center;
-    }
     .dark-mode {
       background-color: #121212;
       color: #f0f0f0;
@@ -22,64 +18,82 @@
     .dark-mode a {
       color: #90caf9 !important;
     }
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+    .about-box {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .dark-mode .about-box {
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+    }
   </style>
 </head>
 <body>
 
-<header style="background: linear-gradient(to right, #008000, #FF0000); color: white; padding: 20px;">
-  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
-    
+<header style="background: linear-gradient(to right, #008000, #FF0000); color: white; padding: 20px 10px;">
+  <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+
     <!-- Flèche retour -->
-    <a href="javascript:history.back()" style="color: white; font-size: 30px; text-decoration: none;">
+    <a href="javascript:history.back()" style="color: white; font-size: 28px; text-decoration: none;">
       <i class="fas fa-arrow-left"></i>
     </a>
 
-    <!-- Centre : logo, titre et langues -->
+    <!-- Centre : logo, titre, langues -->
     <div style="text-align: center; flex-grow: 1;">
       <a href="index.html"><img src="logo.png" alt="Hand Pump Nepal" style="height: 50px;"></a>
       <h1 style="margin: 5px 0;">
         <a href="about.html" style="color: white; text-decoration: none;">About Us</a>
       </h1>
-      <div style="margin-top: 5px;">
+      <div>
         🌐 
-        <a href="about.html" style="color: white; text-decoration: none; margin: 0 10px;">EN</a>|
-        <a href="about_np.html" style="color: white; text-decoration: none; margin: 0 10px;">NP</a>|
-        <a href="about_ar.html" style="color: white; text-decoration: none; margin: 0 10px;">AR</a>
+        <a href="about.html" style="color: white; text-decoration: none; margin: 0 8px;">EN</a>|
+        <a href="about_np.html" style="color: white; text-decoration: none; margin: 0 8px;">NP</a>|
+        <a href="about_ar.html" style="color: white; text-decoration: none; margin: 0 8px;">AR</a>
       </div>
     </div>
 
-    <!-- Maison + Réseaux -->
+    <!-- Maison + Réseaux sociaux -->
     <div style="text-align: right;">
-      <a href="index.html" style="color: white; font-size: 30px; text-decoration: none; margin-right: 15px;">
+      <a href="index.html" style="color: white; font-size: 28px; text-decoration: none; margin-right: 10px;">
         <i class="fas fa-house"></i>
       </a>
-      <a href="https://www.instagram.com/hand_pump_nepal/" target="_blank" style="color: white; margin: 0 10px;">
-        <i class="fab fa-instagram fa-lg"></i>
+      <a href="https://www.instagram.com/hand_pump_nepal/" target="_blank" style="color: white; margin: 0 6px;">
+        <i class="fab fa-instagram"></i>
       </a>
-      <a href="https://www.youtube.com/channel/UC6AhTV5VBIMvlplATf6g07w" target="_blank" style="color: white; margin: 0 10px;">
-        <i class="fab fa-youtube fa-lg"></i>
+      <a href="https://www.youtube.com/channel/UC6AhTV5VBIMvlplATf6g07w" target="_blank" style="color: white; margin: 0 6px;">
+        <i class="fab fa-youtube"></i>
       </a>
-      <a href="mailto:handpumpnepal@gmail.com" style="color: white; margin: 0 10px;">
-        <i class="fas fa-envelope fa-lg"></i>
+      <a href="mailto:handpumpnepal@gmail.com" style="color: white; margin: 0 6px;">
+        <i class="fas fa-envelope"></i>
       </a>
-      <button onclick="toggleDarkMode()" style="margin-left: 10px; background: none; border: 1px solid white; color: white; padding: 5px 10px; border-radius: 5px; cursor: pointer;">
-        🌙 Dark Mode
+      <button onclick="toggleDarkMode()" style="margin-left: 10px; background: none; border: 1px solid white; color: white; padding: 4px 8px; border-radius: 5px; cursor: pointer;">
+        🌙
       </button>
     </div>
   </div>
 </header>
 
 <section>
-  <h2>About Hand Pump Nepal</h2>
-  <p>
-    Hand Pump Nepal is a grassroots initiative committed to improving access to clean water and supporting underserved communities in Nepal. Our mission is to install hand pumps in remote areas where water scarcity affects daily life, health, and dignity.
-  </p>
-  <p>
-    Beyond clean water, we also aim to support widows, orphans, and poor families by providing basic necessities and monthly rations. Every pump installed, every donation received, and every act of kindness makes a lasting difference.
-  </p>
-  <p>
-    Together, we can build a future where no one in Nepal suffers from lack of clean water or daily essentials.
-  </p>
+  <div class="about-box">
+    <h2>About Hand Pump Nepal</h2>
+    <p>
+      Hand Pump Nepal is a grassroots initiative committed to improving access to clean water and supporting underserved communities in Nepal. Our mission is to install hand pumps in remote areas where water scarcity affects daily life, health, and dignity.
+    </p>
+    <p>
+      Beyond clean water, we also aim to support widows, orphans, and poor families by providing basic necessities and monthly rations. Every pump installed, every donation received, and every act of kindness makes a lasting difference.
+    </p>
+    <p>
+      Together, we can build a future where no one in Nepal suffers from lack of clean water or daily essentials.
+    </p>
+  </div>
 </section>
 
 <script>
