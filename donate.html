@@ -1,183 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Make a Donation - Hand Pump Nepal</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f9f9f9;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background: linear-gradient(to right, #008000, #FF0000);
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 10px;
-        }
-        nav ul li {
-            display: inline-block;
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        main {
-            padding: 30px 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            background: white;
-            margin-top: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .donation-details, form {
-            padding: 15px;
-            background: #f1f1f1;
-            border-radius: 8px;
-        }
-        form input, form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        form button {
-            background: #008000;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        form button:hover {
-            background: #005f00;
-        }
-        .link-buttons {
-            text-align: center;
-            margin-top: 20px;
-        }
-        .link-buttons a {
-            display: inline-block;
-            margin: 0 10px;
-            padding: 12px 25px;
-            color: white;
-            font-weight: bold;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .western {
-            background-color: #f0ad00;
-        }
-        .ria {
-            background-color: #005b9f;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <title>Make a Donation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    .dark-mode {
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+
+    .dark-mode a {
+      color: #90caf9 !important;
+    }
+
+    header {
+      background: linear-gradient(to right, #008000, #FF0000);
+      color: white;
+      padding: 20px;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      padding: 0;
+      margin: 10px 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .logo-group {
+      text-align: center;
+    }
+
+    .home-group,
+    .social-group {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .social-group {
+      margin-left: 20px;
+    }
+
+    .home-group {
+      margin-right: 20px;
+      align-items: flex-end;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 12px;
+      margin-top: 45px;
+    }
+
+    section {
+      padding: 30px 20px;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .donation-box {
+      background-color: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    .dark-mode .donation-box {
+      background-color: #1e1e1e;
+      color: #f0f0f0;
+    }
+
+    a.button {
+      display: inline-block;
+      margin: 10px 10px;
+      padding: 10px 20px;
+      background-color: #008000;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    input[type="email"], input[type="text"] {
+      padding: 10px;
+      width: 80%;
+      margin: 10px auto;
+      display: block;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button[type="submit"] {
+      background-color: #008000;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
- <header style="background: linear-gradient(to right, #008000, #FF0000); color: white; padding: 20px; text-align: center;">
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-    <a href="javascript:history.back()" style="color: white; font-size: 40px; font-weight: bold; text-decoration: none;">
-      <i class="fas fa-arrow-left"></i>
-    </a>
 
-    <div style="text-align: center;">
-      <img src="logo.png" alt="Hand Pump Nepal Logo" style="height: 60px; margin-bottom: 10px;" />
-      <h1 style="margin: 0;">Make a Donation</h1>
-      <div style="margin-top: 10px;">
-        <span style="margin-right: 10px;">🌐</span>
-        <a href="index.html" style="color: white; text-decoration: none; margin-right: 15px; font-weight: bold;">EN</a>
-        |
-        <a href="index_np.html" style="color: white; text-decoration: none; margin-left: 15px; font-weight: bold;">NP</a>
+<header>
+  <div class="top-bar">
+
+    <!-- Back + Social -->
+    <div class="social-group">
+      <a href="javascript:history.back()" style="color: white; font-size: 32px;">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <div class="social-icons">
+        <a href="https://www.instagram.com/hand_pump_nepal/" target="_blank" style="color: white;">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UC6AhTV5VBIMvlplATf6g07w" target="_blank" style="color: white;">
+          <i class="fab fa-youtube fa-lg"></i>
+        </a>
+        <a href="mailto:handpumpnepal@gmail.com" style="color: white;">
+          <i class="fas fa-envelope fa-lg"></i>
+        </a>
       </div>
     </div>
 
-    <a href="index.html" style="color: white; font-size: 40px; font-weight: bold; text-decoration: none;">
-      <i class="fas fa-house"></i>
-    </a>
-  </div>
+    <!-- Logo + Nav -->
+    <div class="logo-group">
+      <a href="index.html">
+        <img src="logo.png" alt="Hand Pump Nepal" style="height: 50px;" />
+      </a>
+      <nav>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="gallery_final_fixed.html">Gallery</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="donate.html">Make a Donation</a></li>
+        </ul>
+      </nav>
+      <h1 style="margin: 5px 0;"><a href="donate.html" style="color: white; text-decoration: none;">Make a Donation</a></h1>
+      <div>
+        🌐
+        <a href="donate.html" style="color: white; margin: 0 8px;">EN</a>|
+        <a href="donate_np.html" style="color: white; margin: 0 8px;">NP</a>|
+        <a href="donate_ar.html" style="color: white; margin: 0 8px;">AR</a>
+      </div>
+    </div>
 
-  <nav>
-    <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0 0 0;">
-      <li><a href="about.html" style="color: white; text-decoration: none; font-weight: bold;">About Us</a></li>
-      <li><a href="gallery_final_fixed.html" style="color: white; text-decoration: none; font-weight: bold;">Gallery</a></li>
-      <li><a href="projects.html" style="color: white; text-decoration: none; font-weight: bold;">Projects</a></li>
-      <li><a href="contact.html" style="color: white; text-decoration: none; font-weight: bold;">Contact</a></li>
-      <li><a href="donate.html" style="color: white; text-decoration: none; font-weight: bold;">Make a Donation</a></li>
-    </ul>
-  </nav>
+    <!-- Maison + Dark Mode -->
+    <div class="home-group">
+      <a href="index.html" style="color: white; font-size: 32px;">
+        <i class="fas fa-house"></i>
+      </a>
+      <button onclick="toggleDarkMode()" style="margin-top: 45px; background: none; border: 1px solid white; color: white; padding: 4px 8px; border-radius: 5px; cursor: pointer;">
+        🌙
+      </button>
+    </div>
+  </div>
 </header>
 
-    <main>
-        <div class="section">
-            <h2>Support Our Cause</h2>
-            <p>Your donation helps provide clean water and essential support to families in need in rural Nepal. Thank you for being part of this mission.</p>
-        </div>
+<section>
+  <div class="donation-box">
+    <h2>Send your donation to Nepal</h2>
+    <p>Use the services below to send money:</p>
+    <a href="https://www.westernunion.com/" target="_blank" class="button">Western Union</a>
+    <a href="https://www.riamoneytransfer.com/" target="_blank" class="button">Ria Money Transfer</a>
 
-        <div class="section donation-details">
-            <h3>Send your donation via Western Union or Ria</h3>
-            <p><strong>Recipient Name:</strong> SHEKH AURANJED AALAM</p>
-            <p><strong>City:</strong> Rautahat District</p>
-            <p><strong>Country:</strong> Nepal</p>
-            <p><strong>Phone:</strong> +9779804229112</p>
+    <p><strong>Recipient Name:</strong> [Full Name]</p>
+    <p><strong>City:</strong> [City]</p>
+    <p><strong>Country:</strong> Nepal</p>
+    <p><strong>Phone:</strong> +9779804229112</p>
 
-            <div class="link-buttons">
-                <a href="https://www.westernunion.com" target="_blank" class="western">Go to Western Union</a>
-                <a href="https://www.riamoneytransfer.com" target="_blank" class="ria">Go to Ria</a>
-            </div>
+    <p style="margin-top: 20px;">
+      💡 You will be redirected to the official website of the selected service. Use the information above when making your transfer.
+    </p>
 
-            <p style="text-align: center; font-style: italic; margin-top: 10px;">
-                💡 You will be redirected to the official website of the selected service. Use the information above when making your transfer.
-            </p>
-            <p style="text-align: center; font-weight: bold; color: #cc0000; margin-top: 10px;">
-                ⚠️ IMPORTANT You must provide the MTCN (Western Union) or Reference Number (Ria) in the form below for us to receive your donation.
-            </p>
-        </div>
+    <p style="color: red; font-weight: bold;">
+      🔑 This number is required for our team to receive your donation. You will receive it from Western Union or Ria after completing the transfer.
+    </p>
 
-        <div class="section">
-            <h3>Confirm Your Donation</h3>
-            <form>
-                <label for="name">Your Name:</label>
-                <input type="text" id="name" name="name" required>
+    <h3 style="margin-top: 30px;">Confirm Your Donation</h3>
+    <form>
+      <input type="email" placeholder="Your Email" required />
+      <input type="text" placeholder="MTCN / Reference Number" required />
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</section>
 
-                <label for="amount">Amount Sent (USD):</label>
-                <input type="number" id="amount" name="amount" required>
+<footer>
+  <p>&copy; 2025 Hand Pump Nepal. All rights reserved.</p>
+</footer>
 
-                <label for="email">Your Email:</label>
-                <input type="email" id="email" name="email" required>
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+  }
+</script>
 
-                <p><em>📩 Your email is important so we can send a confirmation that your donation has been received.</em></p>
-
-                <p style="color: #cc0000; font-weight: bold; font-size: 17px; margin-top: 15px;">
-                    🔑 This number is required for our team to receive your donation. You will receive it from Western Union or Ria after completing the transfer.
-                </p>
-                <label for="mtcn">MTCN (Western Union) / Reference Number (Ria):</label>
-                <input type="text" id="mtcn" name="mtcn" required>
-
-                <label for="date">Date of Transfer:</label>
-                <input type="date" id="date" name="date" required>
-
-                <label for="message">Message (Optional):</label>
-                <textarea id="message" name="message" rows="4"></textarea>
-
-                <button type="submit">Submit Confirmation</button>
-            </form>
-        </div>
-    </main>
 </body>
 </html>
