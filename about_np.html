@@ -2,79 +2,50 @@
 <html lang="ne">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hand Pump Nepal - हाम्रोबारे</title>
+  <title>हाम्रो बारेमा</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
       margin: 0;
       padding: 0;
-      background-color: #f4f4f4;
-      color: #333;
     }
-
-    header {
-      background: linear-gradient(to right, #008000, #FF0000);
-      color: white;
-      padding: 20px;
-      text-align: center;
+    .dark-mode {
+      background-color: #121212;
+      color: #f0f0f0;
     }
-
-    nav ul {
-      list-style: none;
-      padding: 0;
+    .dark-mode a {
+      color: #90caf9 !important;
+    }
+    section {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
+      align-items: center;
+      min-height: 60vh;
+      padding: 20px;
+      text-align: center;
     }
-
-    nav ul li {
-      margin: 10px;
-    }
-
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 40px auto;
-      background: white;
+    .about-box {
+      max-width: 800px;
+      width: 100%;
+      background-color: white;
       padding: 30px;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
     }
-
-    h2 {
-      text-align: center;
-      color: #333;
-    }
-
-    p {
-      font-size: 18px;
-      line-height: 1.6;
-      margin-bottom: 20px;
-      text-align: justify;
-    }
-
-    footer {
-      background: #333;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+    .dark-mode .about-box {
+      background-color: #1e1e1e;
+      color: #f0f0f0;
     }
   </style>
 </head>
 <body>
 
 <header style="background: linear-gradient(to right, #008000, #FF0000); color: white; padding: 20px;">
-  <div style="display: flex; align-items: flex-start; justify-content: space-between;">
+  <div style="display: flex; align-items: flex-start; justify-content:space-between;">
 
-    <!-- Colonne gauche : flèche + réseaux en ligne -->
+    <!-- Flèche + Réseaux -->
     <div style="display: flex; flex-direction: column; align-items: flex-start; margin-left: 20px;">
       <a href="javascript:history.back()" style="color: white; font-size: 32px; text-decoration: none;">
         <i class="fas fa-arrow-left"></i>
@@ -92,7 +63,7 @@
       </div>
     </div>
 
-    <!-- Centre : logo, titre en népalais, langues -->
+    <!-- Logo + Titre + Langues -->
     <div style="text-align: center;">
       <a href="index_np.html">
         <img src="logo.png" alt="Hand Pump Nepal" style="height: 50px;">
@@ -108,7 +79,7 @@
       </div>
     </div>
 
-    <!-- Colonne droite : maison + dark mode -->
+    <!-- Maison + Dark Mode -->
     <div style="display: flex; flex-direction: column; align-items: flex-end; margin-right: 20px;">
       <a href="index_np.html" style="color: white; font-size: 32px; text-decoration: none;">
         <i class="fas fa-house"></i>
@@ -121,15 +92,22 @@
   </div>
 </header>
 
-<div class="container">
-  <h2>हाम्रोबारे</h2>
-  <p>Hand Pump Nepal एक गैर-नाफामूलक संस्था हो जुन नेपालका ग्रामीण तथा टाढा क्षेत्रहरूमा स्वच्छ पानीको पहुँच सुधार गर्न समर्पित छ।</p>
-  <p>हामी गाउँगाउँमा हात पम्प जडान गरेर समुदायलाई दिगो र सुरक्षित पानीको सुविधा उपलब्ध गराउँछौं।</p>
-  <p>हाम्रो अभियानले गरीब परिवारहरूलाई नयाँ जीवन दिन्छ — स्वास्थ्यमा सुधार, महिला तथा बालबालिकाको सुरक्षामा वृद्धि, र पानी खोज्नको लागि लामो दूरी पार गर्नुपर्ने बाध्यता अन्त्य गर्दछ।</p>
-  <p>हामी सबैको साथ, सहयोग र योगदानद्वारा धेरैको जीवन परिवर्तन गर्न सक्छौं।</p>
-</div>
+<section>
+  <div class="about-box">
+    <h2>हाम्रो मिशन</h2>
+    <p>
+      Hand Pump Nepal एक स्थानीय पहल हो जसले नेपालका ग्रामीण भेगहरूमा स्वच्छ पानीको पहुँच सुधार गर्न र सेवाहीन समुदायहरूलाई समर्थन गर्न काम गर्छ। हाम्रो लक्ष्य यस्तो स्थानहरूमा हस्तपम्प जडान गर्नु हो जहाँ पानीको अभावले दैनिक जीवन, स्वास्थ्य र गरिमामा असर पार्छ।
+    </p>
+    <p>
+      स्वच्छ पानीको पहुँचसँगै हामी विधवा, अनाथ, र गरिब परिवारहरूलाई आधारभूत आवश्यकता र मासिक राहत प्रदान गर्न पनि समर्पित छौं। प्रत्येक पम्प, प्रत्येक दान, र प्रत्येक दयालु क्रियाले दीर्घकालीन प्रभाव पार्छ।
+    </p>
+    <p>
+      सँगै मिलेर हामी नेपालमा कोही पनि स्वच्छ पानी वा दैनिक आवश्यकताको अभावमा नपरोस् भन्ने लक्ष्यमा पुग्न सक्छौं।
+    </p>
+  </div>
 </section>
 
+<!-- Script dark mode -->
 <script>
   function toggleDarkMode() {
     document.body.classList.toggle("dark-mode");
