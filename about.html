@@ -1,59 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>About Us - Hand Pump Nepal</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 0; color: #333; }
-        header { background: linear-gradient(to right, #008000, #FF0000); color: white; padding: 20px; text-align: center; }
-        nav ul { list-style: none; padding: 0; margin-top: 10px; }
-        nav ul li { display: inline-block; margin: 0 15px; }
-        nav ul li a { color: white; text-decoration: none; font-weight: bold; }
-        main { padding: 30px 20px; max-width: 800px; margin: 0 auto; background: white; margin-top: 30px; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .section { margin-bottom: 30px; }
-    </style>
+  <meta charset="UTF-8" />
+  <title>About Us</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    section {
+      padding: 20px;
+      text-align: center;
+    }
+    .dark-mode {
+      background-color: #121212;
+      color: #f0f0f0;
+    }
+    .dark-mode a {
+      color: #90caf9 !important;
+    }
+  </style>
 </head>
 <body>
-<header style="background: linear-gradient(to right, #008000, #FF0000); color: white; padding: 20px; text-align: center;">
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-    <a href="javascript:history.back()" style="color: white; font-size: 40px; font-weight: bold; text-decoration: none;">
+
+<header style="background: linear-gradient(to right, #008000, #FF0000); color: white; padding: 20px;">
+  <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+    
+    <!-- Flèche retour -->
+    <a href="javascript:history.back()" style="color: white; font-size: 30px; text-decoration: none;">
       <i class="fas fa-arrow-left"></i>
     </a>
 
+    <!-- Titre centré cliquable + logo -->
     <div style="text-align: center;">
-      <img src="logo.png" alt="Hand Pump Nepal Logo" style="height: 60px; margin-bottom: 10px;" />
-      <h1 style="margin: 0;">About Us</h1>
-      <div style="margin-top: 10px;">
-        <span style="margin-right: 10px;">🌐</span>
-        <a href="index.html" style="color: white; text-decoration: none; margin-right: 15px; font-weight: bold;">EN</a>
-        |
-        <a href="index_np.html" style="color: white; text-decoration: none; margin-left: 15px; font-weight: bold;">NP</a>
+      <a href="index.html"><img src="logo.png" alt="Hand Pump Nepal" style="height: 50px;"></a>
+      <h1 style="margin: 5px 0;">
+        <a href="about.html" style="color: white; text-decoration: none;">About Us</a>
+      </h1>
+      <!-- Langues -->
+      <div style="margin-top: 5px;">
+        🌐 
+        <a href="about.html" style="color: white; text-decoration: none; margin: 0 10px;">EN</a>|
+        <a href="about_np.html" style="color: white; text-decoration: none; margin: 0 10px;">NP</a>|
+        <a href="about_ar.html" style="color: white; text-decoration: none; margin: 0 10px;">AR</a>
       </div>
     </div>
 
-    <a href="index.html" style="color: white; font-size: 40px; font-weight: bold; text-decoration: none;">
-      <i class="fas fa-house"></i>
-    </a>
-  </div>
+    <!-- Réseaux sociaux -->
+    <div style="text-align: right;">
+      <a href="https://www.instagram.com/hand_pump_nepal/" target="_blank" style="color: white; margin: 0 10px;">
+        <i class="fab fa-instagram fa-lg"></i>
+      </a>
+      <a href="https://www.youtube.com/channel/UC6AhTV5VBIMvlplATf6g07w" target="_blank" style="color: white; margin: 0 10px;">
+        <i class="fab fa-youtube fa-lg"></i>
+      </a>
+      <a href="mailto:handpumpnepal@gmail.com" style="color: white; margin: 0 10px;">
+        <i class="fas fa-envelope fa-lg"></i>
+      </a>
 
-  <nav>
-    <ul style="list-style: none; padding: 0; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 20px 0 0 0;">
-      <li><a href="about.html" style="color: white; text-decoration: none; font-weight: bold;">About Us</a></li>
-      <li><a href="gallery_final_fixed.html" style="color: white; text-decoration: none; font-weight: bold;">Gallery</a></li>
-      <li><a href="projects.html" style="color: white; text-decoration: none; font-weight: bold;">Projects</a></li>
-      <li><a href="contact.html" style="color: white; text-decoration: none; font-weight: bold;">Contact</a></li>
-      <li><a href="donate.html" style="color: white; text-decoration: none; font-weight: bold;">Make a Donation</a></li>
-    </ul>
-  </nav>
+      <!-- Bouton dark mode -->
+      <button onclick="toggleDarkMode()" style="margin-left: 10px; background: none; border: 1px solid white; color: white; padding: 5px 10px; border-radius: 5px; cursor: pointer;">
+        🌙 Dark Mode
+      </button>
+    </div>
+  </div>
 </header>
 
-    <main>
-        <div class="section">
-            <h2>About Hand Pump Nepal</h2>
-            <p>Hand Pump Nepal is a grassroots initiative dedicated to providing clean water access and essential aid to remote communities in Nepal. Our work is rooted in compassion and solidarity, helping families through the installation of water pumps and monthly food rations for the most vulnerable.</p>
-        </div>
-    </main>
+<section>
+  <h2>Our Mission</h2>
+  <p>Our mission is to improve access to clean water in Nepal by installing hand pumps in remote villages and supporting underprivileged communities.</p>
+</section>
+
+<script>
+  function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+  }
+</script>
+
 </body>
 </html>
