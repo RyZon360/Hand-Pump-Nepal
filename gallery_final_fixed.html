@@ -9,14 +9,13 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
       margin: 0;
-      padding: 0;
+      background-color: #f4f4f4;
     }
 
     .dark-mode {
       background-color: #121212;
-      color: #f0f0f0;
+      color: #f4f4f4;
     }
 
     .dark-mode a {
@@ -26,7 +25,7 @@
     header {
       background: linear-gradient(to right, #008000, #FF0000);
       color: white;
-      padding: 20px;
+      padding: 15px 20px;
     }
 
     .top-bar {
@@ -35,13 +34,17 @@
       align-items: flex-start;
     }
 
+    .logo-group {
+      text-align: center;
+    }
+
     nav ul {
       list-style: none;
       display: flex;
-      gap: 20px;
+      gap: 18px;
       justify-content: center;
       padding: 0;
-      margin: 10px 0;
+      margin: 12px 0;
     }
 
     nav ul li a {
@@ -50,29 +53,24 @@
       font-weight: bold;
     }
 
-    .logo-group {
-      text-align: center;
-    }
-
-    .home-group,
-    .social-group {
+    .social-group,
+    .home-group {
       display: flex;
       flex-direction: column;
     }
 
-    .social-group {
-      margin-left: 20px;
-    }
-
     .home-group {
-      margin-right: 20px;
       align-items: flex-end;
     }
 
     .social-icons {
       display: flex;
       gap: 12px;
-      margin-top: 45px;
+      margin-top: 40px;
+    }
+
+    h1 {
+      margin: 10px 0 5px;
     }
 
     section {
@@ -81,22 +79,23 @@
       margin: 0 auto;
     }
 
-    .gallery-grid {
+    .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 15px;
     }
 
-    .gallery-grid img {
+    .gallery img {
       width: 100%;
       height: 220px;
       object-fit: cover;
-      border-radius: 10px;
+      border-radius: 8px;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 15px;
+      background-color: #f0f0f0;
       font-size: 14px;
     }
   </style>
@@ -138,11 +137,11 @@
           <li><a href="donate.html">Make a Donation</a></li>
         </ul>
       </nav>
-      <h1 style="margin: 5px 0;"><a href="gallery_final_fixed.html" style="color: white; text-decoration: none;">Gallery</a></h1>
+      <h1><a href="gallery_final_fixed.html" style="color: white; text-decoration: none;">Gallery</a></h1>
       <div>
-        🌐
-        <a href="gallery_final_fixed.html" style="color: white; margin: 0 8px;">EN</a>|
-        <a href="gallery_final_fixed_np.html" style="color: white; margin: 0 8px;">NP</a>|
+        🌐 
+        <a href="gallery_final_fixed.html" style="color: white; margin: 0 8px;">EN</a> |
+        <a href="gallery_final_fixed_np.html" style="color: white; margin: 0 8px;">NP</a> |
         <a href="gallery_final_fixed_ar.html" style="color: white; margin: 0 8px;">AR</a>
       </div>
     </div>
@@ -152,7 +151,7 @@
       <a href="index.html" style="color: white; font-size: 32px;">
         <i class="fas fa-house"></i>
       </a>
-      <button onclick="toggleDarkMode()" style="margin-top: 45px; background: none; border: 1px solid white; color: white; padding: 4px 8px; border-radius: 5px; cursor: pointer;">
+      <button onclick="toggleDarkMode()" style="margin-top: 40px; background: none; border: 1px solid white; color: white; padding: 4px 8px; border-radius: 5px; cursor: pointer;">
         🌙
       </button>
     </div>
@@ -160,7 +159,7 @@
 </header>
 
 <section>
-  <div class="gallery-grid">
+  <div class="gallery">
     <a href="WhatsApp Image 2025-03-25 at 19.19.42.jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.19.42.jpeg" alt="Image 1"></a>
     <a href="WhatsApp Image 2025-03-25 at 19.19.41.jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.19.41.jpeg" alt="Image 2"></a>
     <a href="WhatsApp Image 2025-03-25 at 19.19.41 (1).jpeg" data-lightbox="gallery"><img src="WhatsApp Image 2025-03-25 at 19.19.41 (1).jpeg" alt="Image 3"></a>
