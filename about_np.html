@@ -71,28 +71,54 @@
 </head>
 <body>
 
-<header>
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-    <a href="javascript:history.back()" style="color: white; font-size: 40px; font-weight: bold; text-decoration: none;">
-      <i class="fas fa-arrow-left"></i>
-    </a>
+<header style="background: linear-gradient(to right, #008000, #FF0000); color: white; padding: 20px;">
+  <div style="display: flex; align-items: flex-start; justify-content: space-between;">
 
-    <h1 style="margin: 0;">Hand Pump Nepal</h1>
+    <!-- Colonne gauche : flèche + réseaux en ligne -->
+    <div style="display: flex; flex-direction: column; align-items: flex-start; margin-left: 20px;">
+      <a href="javascript:history.back()" style="color: white; font-size: 32px; text-decoration: none;">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <div style="display: flex; gap: 12px; margin-top: 45px;">
+        <a href="https://www.instagram.com/hand_pump_nepal/" target="_blank" style="color: white;">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UC6AhTV5VBIMvlplATf6g07w" target="_blank" style="color: white;">
+          <i class="fab fa-youtube fa-lg"></i>
+        </a>
+        <a href="mailto:handpumpnepal@gmail.com" style="color: white;">
+          <i class="fas fa-envelope fa-lg"></i>
+        </a>
+      </div>
+    </div>
 
-    <a href="index_np.html" style="color: white; font-size: 40px; font-weight: bold; text-decoration: none;">
-      <i class="fas fa-house"></i>
-    </a>
+    <!-- Centre : logo, titre en népalais, langues -->
+    <div style="text-align: center;">
+      <a href="index_np.html">
+        <img src="logo.png" alt="Hand Pump Nepal" style="height: 50px;">
+      </a>
+      <h1 style="margin: 5px 0;">
+        <a href="about_np.html" style="color: white; text-decoration: none;">हाम्रो बारेमा</a>
+      </h1>
+      <div>
+        🌐 
+        <a href="about.html" style="color: white; text-decoration: none; margin: 0 8px;">EN</a>|
+        <a href="about_np.html" style="color: white; text-decoration: none; margin: 0 8px;">NP</a>|
+        <a href="about_ar.html" style="color: white; text-decoration: none; margin: 0 8px;">AR</a>
+      </div>
+    </div>
+
+    <!-- Colonne droite : maison + dark mode -->
+    <div style="display: flex; flex-direction: column; align-items: flex-end; margin-right: 20px;">
+      <a href="index_np.html" style="color: white; font-size: 32px; text-decoration: none;">
+        <i class="fas fa-house"></i>
+      </a>
+      <button onclick="toggleDarkMode()" style="margin-top: 45px; background: none; border: 1px solid white; color: white; padding: 4px 8px; border-radius: 5px; cursor: pointer;">
+        🌙
+      </button>
+    </div>
+
   </div>
-
-  <nav>
-    <ul>
-      <li><a href="about_np.html">हाम्रोबारे</a></li>
-      <li><a href="gallery_final_fixed_np.html">ग्यालरी</a></li>
-      <li><a href="projects_np.html">परियोजनाहरू</a></li>
-      <li><a href="contact_np.html">सम्पर्क गर्नुहोस्</a></li>
-      <li><a href="donate_np.html">दान गर्नुहोस्</a></li>
-    </ul>
-  </nav>
 </header>
 
 <div class="container">
