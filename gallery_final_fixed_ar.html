@@ -110,15 +110,18 @@
 <header style="background: linear-gradient(to right, #008000, #FF0000); color: white; padding: 20px;">
   <div class="top-bar" style="display: flex; align-items: flex-start; justify-content: space-between; direction: ltr;">
 
-<!-- Flèche + Réseaux sociaux séparés et bien positionnés -->
-<div style="position: absolute; top: 20px; left: 20px;">
+<!-- Flèche + Réseaux sociaux dans le flux normal -->
+<div style="display: flex; flex-direction: column; align-items: flex-start; margin-left: 20px; margin-top: 10px;">
   <!-- Flèche -->
-  <a href="javascript:history.back()" style="color: white; font-size: 32px; display: block;">
+  <a href="javascript:history.back()" style="color: white; font-size: 32px;">
     <i class="fas fa-arrow-left"></i>
   </a>
 
-  <!-- Icônes sous la flèche, mais remontées en hauteur -->
-  <div style="display: flex; gap: 16px; margin-top: 32px;">
+  <!-- Espacement pour aligner les icônes avec 🌙 -->
+  <div style="height: 35px;"></div>
+
+  <!-- Icônes horizontales -->
+  <div style="display: flex; gap: 16px;">
     <a href="https://www.instagram.com/hand_pump_nepal/" target="_blank" style="color: white;">
       <i class="fab fa-instagram fa-lg"></i>
     </a>
