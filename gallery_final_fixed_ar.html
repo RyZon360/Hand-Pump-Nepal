@@ -107,29 +107,28 @@
 </head>
 <body>
 
-<header style="background: linear-gradient(to right, #008000, #FF0000); color: white; padding: 20px; position: relative;" dir="ltr">
-  <!-- Flèche + Réseaux sociaux alignés -->
-<div style="position: absolute; top: 20px; left: 20px; display: flex; flex-direction: column; align-items: flex-start; gap: 14px;">
-  <!-- Flèche -->
-  <a href="javascript:history.back()" style="color: white; font-size: 32px;">
-    <i class="fas fa-arrow-left"></i>
-  </a>
+<header style="background: linear-gradient(to right, #008000, #FF0000); color: white; padding: 20px;">
+  <div class="top-bar" style="display: flex; align-items: flex-start; justify-content: space-between; direction: ltr;">
 
-  <!-- Icônes réseaux -->
-  <div style="display: flex; gap: 16px; margin-left: 4px;">
-    <a href="https://www.instagram.com/hand_pump_nepal/" target="_blank" style="color: white;">
-      <i class="fab fa-instagram fa-lg"></i>
-    </a>
-    <a href="https://www.youtube.com/channel/UC6AhTV5VBIMvlplATf6g07w" target="_blank" style="color: white;">
-      <i class="fab fa-youtube fa-lg"></i>
-    </a>
-    <a href="mailto:handpumpnepal@gmail.com" style="color: white;">
-      <i class="fas fa-envelope fa-lg"></i>
-    </a>
-  </div>
-</div>
+    <!-- Flèche + Réseaux sociaux à gauche -->
+    <div style="display: flex; flex-direction: column; align-items: flex-start;">
+      <a href="javascript:history.back()" style="color: white; font-size: 32px;">
+        <i class="fas fa-arrow-left"></i>
+      </a>
+      <div style="display: flex; gap: 16px; margin-top: 12px;">
+        <a href="https://www.instagram.com/hand_pump_nepal/" target="_blank" style="color: white;">
+          <i class="fab fa-instagram fa-lg"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UC6AhTV5VBIMvlplATf6g07w" target="_blank" style="color: white;">
+          <i class="fab fa-youtube fa-lg"></i>
+        </a>
+        <a href="mailto:handpumpnepal@gmail.com" style="color: white;">
+          <i class="fas fa-envelope fa-lg"></i>
+        </a>
+      </div>
+    </div>
 
-    <!-- Logo + Nav + Langues -->
+    <!-- Logo + Navigation + Langues au centre -->
     <div style="text-align: center;">
       <a href="index_ar.html">
         <img src="logo.png" alt="Hand Pump Nepal" style="height: 50px;">
@@ -146,7 +145,7 @@
       <h1 style="margin: 5px 0;">
         <a href="gallery_final_fixed_ar.html" style="color: white; text-decoration: none;">المعرض</a>
       </h1>
-      <div>
+      <div style="margin-top: 5px;">
         🌐 
         <a href="gallery_final_fixed.html" style="color: white; margin: 0 8px;">EN</a> |
         <a href="gallery_final_fixed_np.html" style="color: white; margin: 0 8px;">NP</a> |
@@ -155,8 +154,8 @@
     </div>
 
     <!-- Maison + Dark Mode à droite -->
-    <div style="display: flex; flex-direction: column; align-items: flex-end; margin-right: 20px;">
-      <a href="index_ar.html" style="color: white; font-size: 32px; text-decoration: none;">
+    <div style="display: flex; flex-direction: column; align-items: flex-end;">
+      <a href="index_ar.html" style="color: white; font-size: 32px;">
         <i class="fas fa-house"></i>
       </a>
       <button onclick="toggleDarkMode()" style="margin-top: 45px; background: none; border: 1px solid white; color: white; padding: 4px 8px; border-radius: 5px; cursor: pointer;">
